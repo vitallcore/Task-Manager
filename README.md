@@ -6,7 +6,7 @@
 
 <b>Requirements:</b>
 1. Python >=3.10
-2. poetry >= 1.2.0
+2. uv >= 0.5.18
 3. django >= 5.0.6
 4. django-bootstrap5 >= 24.2
 5. postgreSQL >= 16
