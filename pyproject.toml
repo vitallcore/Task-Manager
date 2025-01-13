@@ -4,4 +4,23 @@ version = "0.1.0"
 description = "Task Manager is a simple web application that helps users manage their tasks."
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "dj-database-url>=2.3.0",
+    "django>=5.1.4",
+    "django-bootstrap5>=24.3",
+    "django-filter>=24.3",
+    "djangorestframework>=3.15.2",
+    "gunicorn>=23.0.0",
+    "psycopg2-binary>=2.9.10",
+    "python-dotenv>=1.0.1",
+    "rollbar>=1.1.1",
+    "uvicorn>=0.34.0",
+    "whitenoise>=6.8.2",
+]
+
+[dependency-groups]
+dev = [
+    "coverage>=7.6.10",
+    "flake8>=7.1.1",
+    "ipython>=8.31.0",
+]
