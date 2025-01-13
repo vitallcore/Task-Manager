@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load i18n %}
+    {% load django_bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <title>{% trans "Task Manager" %}</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    {% include "nav.html" %}
+    <div class="container wrapper flex-grow-1">
+        {% bootstrap_messages %}
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
+      <div class="container my-5 pt-4 border-top">
+        <a target="_blank" href="https://ru.hexlet.io">Hexlet</a>
+      </div>
+    </footer>
+</body>
+</html>

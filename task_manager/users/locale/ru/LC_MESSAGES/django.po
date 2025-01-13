@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-18 18:21+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: forms.py:10 forms.py:17 templates/users.html:9
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: forms.py:11
+msgid ""
+"Required. 150 characters                                or fewer. Letters, "
+"digits                                and @/./+/-/_ only."
+msgstr ""
+"Обязательное поле. Не более 150 символов. Только буквы, цифры и символы @/./"
+"+/-/_."
+
+#: forms.py:21 forms.py:27
+msgid "Password"
+msgstr "Пароль"
+
+#: forms.py:22
+msgid ""
+"Your password must contain                                  at least 3 "
+"characters."
+msgstr "Ваш пароль должен содержать как минимум 3 символа."
+
+#: forms.py:30 forms.py:37
+msgid "Password confirmation"
+msgstr "Подтверждение пароля"
+
+#: forms.py:31
+msgid ""
+"Enter the same password                                  as before, for "
+"verification."
+msgstr "Для подтверждения введите, пожалуйста, пароль ещё раз."
+
+#: forms.py:51 forms.py:58
+msgid "First name"
+msgstr "Имя"
+
+#: forms.py:52 forms.py:63
+msgid "Last name"
+msgstr "Фамилия"
+
+#: mixins.py:9
+msgid "You do not have the permission to change another user."
+msgstr "У вас нет прав для изменения другого пользователя."
+
+#: templates/create.html:5
+msgid "Registration"
+msgstr "Регистрация"
+
+#: templates/create.html:26
+msgid "Register"
+msgstr "Зарегистрировать"
+
+#: templates/delete.html:5
+msgid "Deleting user"
+msgstr "Удаление пользователя"
+
+#: templates/delete.html:6
+msgid "Back to the list of users"
+msgstr "Вернуться к списку пользователей"
+
+#: templates/delete.html:9
+msgid "Are you sure you want to delete"
+msgstr "Вы уверены, что хотите удалить"
+
+#: templates/delete.html:10
+msgid "Yes, delete"
+msgstr "Да, удалить"
+
+#: templates/update.html:5
+msgid "Updating user"
+msgstr "Обновление пользователя"
+
+#: templates/update.html:27 templates/users.html:23
+msgid "Update"
+msgstr "Изменить"
+
+#: templates/users.html:4
+msgid "Users"
+msgstr "Пользователи"
+
+#: templates/users.html:10
+msgid "Full name"
+msgstr "Полное имя"
+
+#: templates/users.html:11
+msgid "created at"
+msgstr "Дата создания"
+
+#: templates/users.html:25
+msgid "Delete"
+msgstr "Удалить"
+
+#: views.py:22
+msgid "User successfully registered"
+msgstr "Пользователь успешно зарегистрирован"
+
+#: views.py:35
+msgid "User successfully updated"
+msgstr "Пользователь успешно изменен"
+
+#: views.py:48
+msgid "User successfully deleted"
+msgstr "Пользователь успешно удален"
+
+#: views.py:49
+msgid ""
+"It is not possible to delete                       user because it is being "
+"used"
+msgstr "Невозможно удалить пользователя, потому что он используется"
