@@ -4,7 +4,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6e2bb5f8fb76dabc8a4d/test_coverage)](https://codeclimate.com/github/vitallcore/python-project-52/test_coverage)
 
 <b>Task Manager</b> is a task management system. It allows you to set tasks, assign performers and change their statuses.
-<p>You can try it at the link </p>
+<p>You can try it at the link https://python-project-52-c8dp.onrender.com</p>
 
 <b>Requirements:</b>
 1. Python >=3.10
