@@ -1,13 +1,16 @@
-from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.views import get_user_model
 from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
+from django.utils.translation import gettext_lazy as _
+from django.views.generic import CreateView, DeleteView, ListView, UpdateView
+
+from task_manager.task_manager_main.mixins import (
+    DeleteProtectErrorMixin,
+    UserLoginRequiredMixin,
+)
+
 from .forms import RegisterUserFrom, UpdateUserForm
 from .mixins import UserPermissionTestMixin
-from task_manager.task_manager_main.mixins import (
-    UserLoginRequiredMixin,
-    DeleteProtectErrorMixin)
-from django.utils.translation import gettext_lazy as _
 
 
 class UsersView(ListView):

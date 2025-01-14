@@ -1,11 +1,12 @@
+from django.contrib.auth.views import get_user_model
+from django.contrib.messages import get_messages
 from django.test import TestCase
 from django.urls import reverse_lazy
-from django.contrib.messages import get_messages
-from django.contrib.auth.views import get_user_model
-from .forms import RegisterUserFrom
-from task_manager.tasks.models import Task
-from task_manager.statuses.models import Status
 
+from task_manager.statuses.models import Status
+from task_manager.tasks.models import Task
+
+from .forms import RegisterUserFrom
 
 test_user1 = {
     "first_name": "test1_first_name",

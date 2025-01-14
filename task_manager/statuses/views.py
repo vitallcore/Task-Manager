@@ -1,12 +1,15 @@
-from django.views.generic import ListView, CreateView, UpdateView, DeleteView
-from task_manager.task_manager_main.mixins import (
-    UserLoginRequiredMixin,
-    DeleteProtectErrorMixin)
 from django.contrib.messages.views import SuccessMessageMixin
-from .forms import CreateStatusFrom, UpdateStatusForm
 from django.urls import reverse_lazy
-from .models import Status
 from django.utils.translation import gettext_lazy as _
+from django.views.generic import CreateView, DeleteView, ListView, UpdateView
+
+from task_manager.task_manager_main.mixins import (
+    DeleteProtectErrorMixin,
+    UserLoginRequiredMixin,
+)
+
+from .forms import CreateStatusFrom, UpdateStatusForm
+from .models import Status
 
 
 class StatusesView(UserLoginRequiredMixin, ListView):

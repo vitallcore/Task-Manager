@@ -1,10 +1,11 @@
-from django.shortcuts import render
-from django.views.generic.base import View
+from django.contrib import messages
 from django.contrib.auth.views import LoginView, LogoutView
 from django.contrib.messages.views import SuccessMessageMixin
-from django.contrib import messages
-from .forms import LoginUserForm
+from django.shortcuts import render
 from django.utils.translation import gettext_lazy as _
+from django.views.generic.base import View
+
+from .forms import LoginUserForm
 
 
 class HomePageView(View):

@@ -1,7 +1,8 @@
-from rest_framework import generics
-from .serializers import UsersSerializer
 from django.contrib.auth.views import get_user_model
+from rest_framework import generics
+
 from .permissions import IsCurrentUserOrReadOnly
+from .serializers import UsersSerializer
 
 
 class UsersAPIList(generics.ListCreateAPIView):

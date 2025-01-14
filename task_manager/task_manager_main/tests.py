@@ -1,9 +1,9 @@
+from django.conf import settings
+from django.contrib.auth.views import get_user_model
+from django.contrib.messages import get_messages
 from django.test import TestCase
 from django.urls import reverse_lazy
-from django.contrib.auth.views import get_user_model
 from django.utils import translation
-from django.conf import settings
-from django.contrib.messages import get_messages
 
 
 class TestIndex(TestCase):
