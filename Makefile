@@ -30,3 +30,6 @@ coverage:
 	poetry run coverage xml
 	poetry run coverage report
 	poetry run coverage html
+
+ruff:
+	ruff check --fix --select I
