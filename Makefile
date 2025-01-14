@@ -7,6 +7,10 @@ install:
 .PHONY: migrate
 migrate:
 	@$(MANAGE) migrate
+	
+.PHONY: makemigrations
+migrate:
+	@$(MANAGE) makemigrations
 
 .PHONY: shell
 shell:
@@ -31,5 +35,10 @@ coverage:
 	poetry run coverage report
 	poetry run coverage html
 
+.PHONY: ruff
 ruff:
 	ruff check --fix --select I
+
+.PHONY: build
+build:
+	./build.sh
