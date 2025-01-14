@@ -1,0 +1,22 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "first_name": "Luke",
+      "last_name": "Skywalker",
+      "username": "Luke19",
+      "password": "R2D2"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "first_name": "Leia",
+      "last_name": "Organa",
+      "username": "SpaceBuns",
+      "password": "NewHope"
+    }
+  }
+]

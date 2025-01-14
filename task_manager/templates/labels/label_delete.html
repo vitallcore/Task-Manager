@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% load i18n %}
+
+{% block title %}
+{% trans 'Delete Label' %}
+{% endblock %}
+
+{% block content %}
+<h1>{% trans 'Delete Label' %}</h1>
+<p>{% trans 'Are you sure you want to delete' %} {{ label.name }}?</p>
+<form method="post" class="form">
+    {% csrf_token %}
+    {% bootstrap_button button_name button_type="submit" button_class="btn-danger" %}
+</form>
+{% endblock %}

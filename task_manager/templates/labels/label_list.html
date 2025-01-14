@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+{% trans 'Labels' %}
+{% endblock %}
+
+{% block content %}
+<div>
+    <h1>{% trans 'Labels' %}</h1>
+    <a href="{% url 'label_create' %}">
+        <button type="button" class="btn btn-primary">{% trans 'Create Label' %}</button>
+    </a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">{% trans 'Name' %}</th>
+                <th scope="col">{% trans 'Creation Date' %}</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for label in labels %}
+            <tr>
+                <td>{{ label.id }}</td>
+                <td>{{ label.name }}</td>
+                <td>{{ label.created_at|date:"d.m.Y H:i" }}</td>
+                <td>
+                    <a href="{% url 'label_update' label.id %}">{% trans 'Edit' %}</a>
+                    <br>
+                    <a href="{% url 'label_delete' label.id %}">{% trans 'Delete' %}</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

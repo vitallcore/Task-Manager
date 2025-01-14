@@ -4,6 +4,11 @@ version = "0.1.0"
 description = "Task Manager is a simple web application that helps users manage their tasks."
 authors = ["vitallcore <vitaslipknotgmail.ru>"]
 readme = "README.md"
+repository = "https://github.com/vitallcore/python-project-52.git"
+classifiers = [
+    "Framework :: Django :: 5.1",
+    "Programming Language :: Python :: 3.10"
+]
 packages = [
     { include = "task_manager" },
 ]
