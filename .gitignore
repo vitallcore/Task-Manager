@@ -10,3 +10,4 @@ coverage.xml
 .env
 db.sqlite3
 *.lock
+.ruff_cache
