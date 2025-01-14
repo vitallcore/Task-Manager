@@ -2,7 +2,6 @@ from django.urls import path
 
 from task_manager.users import views
 
-
 urlpatterns = [
     # Users page. route('users/')
     path('', views.UserListView.as_view(),

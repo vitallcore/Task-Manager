@@ -1,9 +1,8 @@
 import os
 
-from django.core.wsgi import get_wsgi_application
 import rollbar
 from django.conf import settings
-
+from django.core.wsgi import get_wsgi_application
 
 rollbar.init(**settings.ROLLBAR)
 

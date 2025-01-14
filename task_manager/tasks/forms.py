@@ -1,12 +1,11 @@
-from django.forms import ModelForm
 from django import forms
-from django.utils.translation import gettext_lazy as _
-from task_manager.tasks.models import TaskModel
 from django.contrib.auth import get_user_model
+from django.forms import ModelForm
+from django.utils.translation import gettext_lazy as _
 
 # module containing the texts of common buttons and form titles
 from task_manager import texts
-
+from task_manager.tasks.models import TaskModel
 
 User = get_user_model()
 

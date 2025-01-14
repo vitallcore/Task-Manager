@@ -1,9 +1,9 @@
-from django.forms import ModelForm
 from django import forms
-from task_manager.statuses.models import Status
+from django.forms import ModelForm
 
 # module containing the texts of common buttons and form titles
 from task_manager import texts
+from task_manager.statuses.models import Status
 
 
 class StatusForm(ModelForm):

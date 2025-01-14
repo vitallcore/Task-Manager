@@ -1,11 +1,10 @@
 from django.contrib import messages
-from django.contrib.auth.views import LoginView, LogoutView
-from django.shortcuts import render
-from django.views import View
-from django.utils.translation import gettext_lazy as _
-from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.forms import AuthenticationForm
-
+from django.contrib.auth.views import LoginView, LogoutView
+from django.contrib.messages.views import SuccessMessageMixin
+from django.shortcuts import render
+from django.utils.translation import gettext_lazy as _
+from django.views import View
 
 LOGIN_SUCCESS_MESSAGE = _("You are logged in")
 LOGOUT_INFO_MESSAGE = _("You are logged out")

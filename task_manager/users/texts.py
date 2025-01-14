@@ -1,6 +1,5 @@
 from django.utils.translation import gettext_lazy as _
 
-
 PERMISSION_MESSAGE = _("""You do not have permission to change another user.""")
 REGISTER_USER_SUCCESS_MESSAGE = _("User successfully registered")
 UPDATE_USER_SUCCESS_MESSAGE = _("User successfully changed")

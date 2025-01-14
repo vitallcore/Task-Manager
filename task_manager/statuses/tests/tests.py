@@ -1,6 +1,5 @@
-from task_manager.statuses.tests.status_test_case import StatusTestCase
-
 from task_manager.statuses.models import Status
+from task_manager.statuses.tests.status_test_case import StatusTestCase
 
 
 class CreateStatusViewTest(StatusTestCase):

@@ -1,6 +1,5 @@
 from django.utils.translation import gettext_lazy as _
 
-
 CREATE_STATUS_TEXT = _('Create Status')
 CREATE_STATUS_SUCCESS_MESSAGE = _('Status successfully created')
 UPDATE_STATUS_SUCCESS_MESSAGE = _('Status successfully changed')

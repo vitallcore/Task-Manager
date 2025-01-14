@@ -1,6 +1,5 @@
 from django.utils.translation import gettext_lazy as _
 
-
 CREATE_TASK_SUCCESS_MESSAGE = _('Task created successfully')
 UPDATE_TASK_SUCCESS_MESSAGE = _('Task successfully changed')
 DELETE_TASK_SUCCESS_MESSAGE = _('Task successfully deleted')

@@ -1,6 +1,5 @@
-from task_manager.labels.tests.label_test_case import LabelTestCase
-
 from task_manager.labels.models import LabelModel
+from task_manager.labels.tests.label_test_case import LabelTestCase
 
 
 class CreateLabelViewTest(LabelTestCase):

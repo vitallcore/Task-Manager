@@ -1,8 +1,7 @@
 from django import forms
-from django.utils.translation import gettext_lazy as _
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm
-
+from django.utils.translation import gettext_lazy as _
 
 FIRST_NAME_LABEL_USER_FORM = _("First name")
 LAST_NAME_LABEL_USER_FORM = _("Last name")

@@ -1,21 +1,16 @@
-from django.urls import reverse_lazy
 from django.contrib.messages.views import SuccessMessageMixin
+from django.urls import reverse_lazy
+from django.views.generic import CreateView, DeleteView, DetailView, UpdateView
 from django_filters.views import FilterView
-from django.views.generic import (CreateView, UpdateView,
-                                  DeleteView, DetailView)
-
-from task_manager.utils.enums import Template
-from task_manager.mixins import (AuthorizationRequiredMixin,
-                                 AuthorDeletionMixin)
-
-from task_manager.tasks.models import TaskModel
-from task_manager.tasks.forms import TaskForm
-from task_manager.tasks.filters import TaskFilter
 
 # module containing the texts of common buttons and form titles
 from task_manager import texts
+from task_manager.mixins import AuthorDeletionMixin, AuthorizationRequiredMixin
 from task_manager.tasks import texts as tasks_texts
-
+from task_manager.tasks.filters import TaskFilter
+from task_manager.tasks.forms import TaskForm
+from task_manager.tasks.models import TaskModel
+from task_manager.utils.enums import Template
 
 TASK_LIST_URL = reverse_lazy('task-list-page')
 

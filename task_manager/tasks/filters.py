@@ -1,14 +1,13 @@
-from django_filters import FilterSet, ModelChoiceFilter, BooleanFilter
-from django.utils.translation import gettext_lazy as _
-from task_manager.tasks.models import TaskModel
-from task_manager.labels.models import LabelModel
-from task_manager.statuses.models import Status
-from django.contrib.auth import get_user_model
 from django import forms
+from django.contrib.auth import get_user_model
+from django.utils.translation import gettext_lazy as _
+from django_filters import BooleanFilter, FilterSet, ModelChoiceFilter
 
 # module containing the texts of common buttons and form titles
 from task_manager import texts
-
+from task_manager.labels.models import LabelModel
+from task_manager.statuses.models import Status
+from task_manager.tasks.models import TaskModel
 
 USER = get_user_model()
 

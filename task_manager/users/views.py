@@ -1,17 +1,18 @@
-from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth import get_user_model
+from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
-from django.views.generic import ListView, CreateView, UpdateView, DeleteView
-from task_manager.utils.enums import Template
-from task_manager.mixins import (AuthorizationRequiredMixin,
-                                 UserPermissionMixin, DeleteProtectionMixin)
-
-from task_manager.users.forms import RegisterUserForm
+from django.views.generic import CreateView, DeleteView, ListView, UpdateView
 
 # module containing the texts of common buttons and form titles
 from task_manager import texts
+from task_manager.mixins import (
+    AuthorizationRequiredMixin,
+    DeleteProtectionMixin,
+    UserPermissionMixin,
+)
 from task_manager.users import texts as users_texts
-
+from task_manager.users.forms import RegisterUserForm
+from task_manager.utils.enums import Template
 
 USER_LIST_URL = reverse_lazy('user-list-page')
 

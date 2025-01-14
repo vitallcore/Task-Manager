@@ -1,17 +1,14 @@
 from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
-from django.views.generic import ListView, CreateView, UpdateView, DeleteView
-from task_manager.utils.enums import Template
-from task_manager.mixins import (AuthorizationRequiredMixin,
-                                 DeleteProtectionMixin)
-
-from task_manager.statuses.models import Status
-from task_manager.statuses.forms import StatusForm
+from django.views.generic import CreateView, DeleteView, ListView, UpdateView
 
 # module containing the texts of common buttons and form titles
 from task_manager import texts
+from task_manager.mixins import AuthorizationRequiredMixin, DeleteProtectionMixin
 from task_manager.statuses import texts as statuses_texts
-
+from task_manager.statuses.forms import StatusForm
+from task_manager.statuses.models import Status
+from task_manager.utils.enums import Template
 
 STATUS_LIST_URL = reverse_lazy('status-list-page')
 

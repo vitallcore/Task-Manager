@@ -1,10 +1,10 @@
+import os
 from pathlib import Path
-from dotenv import load_dotenv
+
+import dj_database_url
 from django.contrib.messages import constants as messages
 from django.utils.translation import gettext_lazy as _
-import dj_database_url
-import os
-
+from dotenv import load_dotenv
 
 load_dotenv()
 

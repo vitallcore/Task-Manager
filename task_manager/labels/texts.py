@@ -1,6 +1,5 @@
 from django.utils.translation import gettext_lazy as _
 
-
 CREATE_LABEL_SUCCESS_MESSAGE = _('Label created successfully')
 UPDATE_LABEL_SUCCESS_MESSAGE = _('Label successfully changed')
 DELETE_LABEL_SUCCESS_MESSAGE = _('Label successfully deleted')

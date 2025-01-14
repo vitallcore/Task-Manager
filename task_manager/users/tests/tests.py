@@ -1,6 +1,6 @@
-from task_manager.users.tests.user_test_case import UserTestCase
 from django.contrib.auth import get_user_model
 
+from task_manager.users.tests.user_test_case import UserTestCase
 
 USER = get_user_model()
 

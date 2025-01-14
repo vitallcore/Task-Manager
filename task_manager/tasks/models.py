@@ -1,8 +1,8 @@
-from django.db import models
-from task_manager.statuses.models import Status
-from task_manager.labels.models import LabelModel
 from django.contrib.auth import get_user_model
+from django.db import models
 
+from task_manager.labels.models import LabelModel
+from task_manager.statuses.models import Status
 
 USER = get_user_model()
 

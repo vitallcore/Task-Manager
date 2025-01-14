@@ -2,7 +2,6 @@ from django.urls import path
 
 from task_manager.labels import views
 
-
 urlpatterns = [
     # Label list page. route('labels/')
     path('', views.LabelListView.as_view(),

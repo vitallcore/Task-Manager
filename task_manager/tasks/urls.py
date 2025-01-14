@@ -2,7 +2,6 @@ from django.urls import path
 
 from task_manager.tasks import views
 
-
 urlpatterns = [
     # Task list page. route('tasks/')
     path('', views.TaskListView.as_view(),

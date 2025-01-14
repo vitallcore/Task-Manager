@@ -1,16 +1,14 @@
 from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
-from django.views.generic import ListView, CreateView, UpdateView, DeleteView
-from task_manager.labels.models import LabelModel
-from task_manager.labels.forms import LabelForm
-from task_manager.utils.enums import Template
-from task_manager.mixins import (AuthorizationRequiredMixin,
-                                 DeleteProtectionMixin)
+from django.views.generic import CreateView, DeleteView, ListView, UpdateView
 
 # module containing the texts of common buttons and form titles
 from task_manager import texts
 from task_manager.labels import texts as labels_texts
-
+from task_manager.labels.forms import LabelForm
+from task_manager.labels.models import LabelModel
+from task_manager.mixins import AuthorizationRequiredMixin, DeleteProtectionMixin
+from task_manager.utils.enums import Template
 
 LABEL_LIST_URL = reverse_lazy('label-list-page')
 

@@ -1,9 +1,9 @@
-from task_manager.tests.base_test_case import BaseTestCase
 from django.urls import reverse_lazy
 
+from task_manager.labels.models import LabelModel
 from task_manager.statuses.models import Status
 from task_manager.tasks.models import TaskModel
-from task_manager.labels.models import LabelModel
+from task_manager.tests.base_test_case import BaseTestCase
 
 
 class FilterTaskTestCase(BaseTestCase):

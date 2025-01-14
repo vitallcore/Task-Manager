@@ -2,7 +2,6 @@ from django.urls import path
 
 from task_manager.statuses import views
 
-
 urlpatterns = [
     # Status list page. route('statuses/')
     path('',
