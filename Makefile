@@ -1,34 +1,34 @@
 install:
-	uv sync
+	poetry install
 
 build:
 	./build.sh
 
 migrate:
-	uv run python3 manage.py migrate
+	poetry run python3 manage.py migrate
 
 makemigrations:
-	uv run python3 manage.py makemigrations
+	poetry run python3 manage.py makemigrations
 
 dev:
-	uv run python3 manage.py runserver 8000
+	poetry run python3 manage.py runserver 8000
 
 start:
-	uv run python3 -m gunicorn core.asgi:application -k uvicorn.workers.UvicornWorker
+	poetry run python3 -m gunicorn core.asgi:application -k uvicorn.workers.UvicornWorker
 
 lint:
-	uv run flake8
+	poetry run flake8
 
 test:
-	uv run python3 manage.py test
+	poetry run python3 manage.py test
 
 test-coverage:
-	uv run coverage run manage.py test
-	uv run coverage report
-	uv run coverage xml
+	poetry run coverage run manage.py test
+	poetry run coverage report
+	poetry run coverage xml
 
 selfcheck:
-	uv check
+	poetry check
 
 check: lint test
 
