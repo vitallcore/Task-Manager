@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% load i18n %}
+
+{% block title %}
+{% trans 'Tasks' %}
+{% endblock %}
+
+{% block content %}
+<div>
+    <h1>{% trans 'Tasks' %}</h1>
+    <a href="{% url 'task_create' %}">
+        <button type="button" class="btn btn-primary">{% trans 'Create Task' %}</button>
+    </a>
+    <div class="card mb-3">
+        <div class="card-body bg-light">
+            <form method="get" class="mb-4">
+                {% bootstrap_form filter.form %}
+                <button type="submit" class="btn btn-primary">{% trans 'Filter' %}</button>
+            </form>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">{% trans 'Name' %}</th>
+                <th scope="col">{% trans 'Status' %}</th>
+                <th scope="col">{% trans 'Author' %}</th>
+                <th scope="col">{% trans 'Executor' %}</th>
+                <th scope="col">{% trans 'Creation Date' %}</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task in tasks %}
+            <tr>
+                <td>{{ task.id }}</td>
+                <td><a href="{% url 'task_detail' task.id %}">{{ task.name }}</a></td>
+                <td>{{ task.status }}</td>
+                <td>{{ task.author }}</td>
+                <td>{{ task.executor }}</td>
+                <td>{{ task.created_at|date:"d.m.Y H:i" }}</td>
+                <td>
+                    <a href="{% url 'task_update' task.id %}">{% trans 'Edit' %}</a>
+                    <br>
+                    <a href="{% url 'task_delete' task.id %}">{% trans 'Delete' %}</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

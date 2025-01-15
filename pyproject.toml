@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "hexlet-code"
+version = "0.1.0"
+description = "Task Manager is a simple web application that helps users manage their tasks."
+authors = ["vitallcore <vitaslipknot@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/vitallcore/python-project-52.git"
+classifiers = [
+    "Framework :: Django :: 5.1",
+    "Programming Language :: Python :: 3.10"
+]
+packages = [{include = "task_manager"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+psycopg2-binary = "^2.9.9"
+django = "5.1.1"
+dj-database-url = "^2.2.0"
+load-dotenv = "^0.1.0"
+whitenoise = {extras = ["brotli"], version = "^6.7.0"}
+gunicorn = "^23.0.0"
+uvicorn = "^0.30.6"
+python-dotenv = "^1.0.1"
+django-bootstrap5 = "^24.3"
+django-filter = "^24.3"
+rollbar = "^0.16.3"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.1"
+flake8 = "^7.1.1"
+coverage = "^7.6.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
