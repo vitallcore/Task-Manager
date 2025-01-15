@@ -8,7 +8,10 @@ from task_manager.mixins import (
     ProtectErrorMixin,
     UserPermissionMixin,
 )
-from task_manager.users.forms import CustomUserChangeForm, CustomUserCreationForm
+from task_manager.users.forms import (
+    CustomUserChangeForm,
+    CustomUserCreationForm,
+)
 from task_manager.users.models import User
 
 
